@@ -19,7 +19,7 @@
               appName: "DwAR",
               customerId: "4",
               campaignName: "audi2",
-              serverUrl: "https://3.110.158.27/event"
+              serverUrl: "https://staging.lttl.in/event"
           }
        );
 
@@ -152,80 +152,80 @@
 
   
     
-      const target_imagec1f904ccbb6_iconGeometry = new THREE.PlaneGeometry(1, 0.720164609053498);
-   const target_imagec1f904ccbb6_texture = await loadTexture("assets/shared image (4).jpg");
-  const target_imagec1f904ccbb6_image = new THREE.MeshBasicMaterial({
-      map: target_imagec1f904ccbb6_texture,
+      const image_c53ccca7_4d54b222_iconGeometry = new THREE.PlaneGeometry(1, 0.65);
+   const image_c53ccca7_4d54b222_texture = await loadTexture("assets/audi-logo.png");
+  const image_c53ccca7_4d54b222_image = new THREE.MeshBasicMaterial({
+      map: image_c53ccca7_4d54b222_texture,
     });
-    const target_imagec1f904ccbb6 = new THREE.Mesh(target_imagec1f904ccbb6_iconGeometry, target_imagec1f904ccbb6_image);
-    target_imagec1f904ccbb6.scale.set(1, 1, 1);
-    target_imagec1f904ccbb6.position.set(0, 0, 0);
-    target_imagec1f904ccbb6.rotation.set(-0.001, 0, 0);
+    const image_c53ccca7_4d54b222 = new THREE.Mesh(image_c53ccca7_4d54b222_iconGeometry, image_c53ccca7_4d54b222_image);
+    image_c53ccca7_4d54b222.scale.set(0.3, 0.33, 0.3);
+    image_c53ccca7_4d54b222.position.set(-0.25, -0.6, 0.04);
+    image_c53ccca7_4d54b222.rotation.set(-0.001, 0, 0);
+    image_c53ccca7_4d54b222.userData.clickable = true
+    
+    image_c53ccca7_4d54b222.userData.eventName ="Audi Website"
+const image_36418ace_51682b7b_iconGeometry = new THREE.PlaneGeometry(1, 0.52);
+   const image_36418ace_51682b7b_texture = await loadTexture("assets/Group 1261156650.png");
+  const image_36418ace_51682b7b_image = new THREE.MeshBasicMaterial({
+      map: image_36418ace_51682b7b_texture,
+    });
+    const image_36418ace_51682b7b = new THREE.Mesh(image_36418ace_51682b7b_iconGeometry, image_36418ace_51682b7b_image);
+    image_36418ace_51682b7b.scale.set(0.4, 0.4, 1);
+    image_36418ace_51682b7b.position.set(0.315, -0.6, 0.04);
+    image_36418ace_51682b7b.rotation.set(-0.001, 0, 0);
+    image_36418ace_51682b7b.userData.clickable = true
+    
+    image_36418ace_51682b7b.userData.eventName ="Test Drive"
+const target_imageundefic5a3d_iconGeometry = new THREE.PlaneGeometry(1, 0.720164609053498);
+   const target_imageundefic5a3d_texture = await loadTexture("assets/shared image (4).jpg");
+  const target_imageundefic5a3d_image = new THREE.MeshBasicMaterial({
+      map: target_imageundefic5a3d_texture,
+    });
+    const target_imageundefic5a3d = new THREE.Mesh(target_imageundefic5a3d_iconGeometry, target_imageundefic5a3d_image);
+    target_imageundefic5a3d.scale.set(1, 1, 1);
+    target_imageundefic5a3d.position.set(0.01, -0.01, 0.01);
+    target_imageundefic5a3d.rotation.set(-0.001, 0, 0);
     
     
     
 
-    const video_asset_8c087bcaaf4_planeGeometry = new THREE.PlaneGeometry(1, 0.7678244972577697);
+    const video_asset_8c087b460da_planeGeometry = new THREE.PlaneGeometry(1, 0.7678244972577697);
 
-    const video_asset_8c087bcaaf4_Item0Video = await loadVideo("assets/audi car video.mp4");
+    const video_asset_8c087b460da_Item0Video = await loadVideo("assets/audi car video.mp4");
 
-    const video_asset_8c087bcaaf4_Item0VideoTexture = new THREE.VideoTexture(
-      video_asset_8c087bcaaf4_Item0Video
+    const video_asset_8c087b460da_Item0VideoTexture = new THREE.VideoTexture(
+      video_asset_8c087b460da_Item0Video
     );
 
-    let video_asset_8c087bcaaf4_Item0VideoMaterial
+    let video_asset_8c087b460da_Item0VideoMaterial
 
-      video_asset_8c087bcaaf4_Item0VideoMaterial = new THREE.MeshBasicMaterial({
-          map: video_asset_8c087bcaaf4_Item0VideoTexture,
+      video_asset_8c087b460da_Item0VideoMaterial = new THREE.MeshBasicMaterial({
+          map: video_asset_8c087b460da_Item0VideoTexture,
         })
     
-     const video_asset_8c087bcaaf4 = new THREE.Mesh(
-      video_asset_8c087bcaaf4_planeGeometry,
-      video_asset_8c087bcaaf4_Item0VideoMaterial
+     const video_asset_8c087b460da = new THREE.Mesh(
+      video_asset_8c087b460da_planeGeometry,
+      video_asset_8c087b460da_Item0VideoMaterial
     );
 
-  video_asset_8c087bcaaf4.position.set(0, 0, 0);
+  video_asset_8c087b460da.position.set(0.012, 0.002, 0.022);
 
 
 
   if (isIOS) {
-    video_asset_8c087bcaaf4_Item0Video.muted=isIOS
+    video_asset_8c087b460da_Item0Video.muted=isIOS
     muteIconMesh = await loadUnmuteLogo();
     anchor.group.add(muteIconMesh);
   }
 
-  video_asset_8c087bcaaf4_Item0Video.loop=true;
+  video_asset_8c087b460da_Item0Video.loop=true;
   
-  video_asset_8c087bcaaf4.scale.set(1.05, 1, 1);
+  video_asset_8c087b460da.scale.set(0.95, 0.84, 1);
 
-    video_asset_8c087bcaaf4.rotation.set(-0.001, 0, 0);
+    video_asset_8c087b460da.rotation.set(-0.004, 0, 0);
 
     
   
-const image_c53ccca7_4d54d50c_iconGeometry = new THREE.PlaneGeometry(1, 0.65);
-   const image_c53ccca7_4d54d50c_texture = await loadTexture("assets/audi-logo.png");
-  const image_c53ccca7_4d54d50c_image = new THREE.MeshBasicMaterial({
-      map: image_c53ccca7_4d54d50c_texture,
-    });
-    const image_c53ccca7_4d54d50c = new THREE.Mesh(image_c53ccca7_4d54d50c_iconGeometry, image_c53ccca7_4d54d50c_image);
-    image_c53ccca7_4d54d50c.scale.set(0.3, 0.33, 0.3);
-    image_c53ccca7_4d54d50c.position.set(-0.3, -0.6, 0);
-    image_c53ccca7_4d54d50c.rotation.set(-0.001, 0, 0);
-    
-    
-    
-const image_36418ace_51651679_iconGeometry = new THREE.PlaneGeometry(1, 0.52);
-   const image_36418ace_51651679_texture = await loadTexture("assets/Group 1261156650.png");
-  const image_36418ace_51651679_image = new THREE.MeshBasicMaterial({
-      map: image_36418ace_51651679_texture,
-    });
-    const image_36418ace_51651679 = new THREE.Mesh(image_36418ace_51651679_iconGeometry, image_36418ace_51651679_image);
-    image_36418ace_51651679.scale.set(0.4, 0.4, 1);
-    image_36418ace_51651679.position.set(0.3, -0.6, 0);
-    image_36418ace_51651679.rotation.set(-0.001, 0, 0);
-    
-    
-    
       
        document.body.addEventListener("click", (e) => {
     const mouseX = (e.clientX / window.innerWidth) * 2 - 1;
@@ -258,7 +258,7 @@ const image_36418ace_51651679_iconGeometry = new THREE.PlaneGeometry(1, 0.52);
 
         if(isIOS){ 
           if (o.userData.clickable && o === muteIconMesh) {
-            video_asset_8c087bcaaf4_Item0Video.muted=false
+            video_asset_8c087b460da_Item0Video.muted=false
     
             anchor.group.remove(muteIconMesh);
             return true;
@@ -271,15 +271,28 @@ const image_36418ace_51651679_iconGeometry = new THREE.PlaneGeometry(1, 0.52);
       if (o.userData.clickable) window.showLoadingScreen();
 
       
+      if (o.userData.clickable && o === image_c53ccca7_4d54b222) {
+        setTimeout(()=>{
+          window.location.href = "https://www.audi.in/in/web/en.html"
+        },100)
+        }
+      
+
+      if (o.userData.clickable && o === image_36418ace_51682b7b) {
+        setTimeout(()=>{
+          window.location.href = "https://auditestdrive.in/en/cartestdrive/book/49/Q3BoldEdition/847"
+        },100)
+        }
+      
       }
 
     })
     
       
-    
-anchor.group.add(video_asset_8c087bcaaf4)
-anchor.group.add(image_c53ccca7_4d54d50c)
-anchor.group.add(image_36418ace_51651679)
+    anchor.group.add(image_c53ccca7_4d54b222)
+anchor.group.add(image_36418ace_51682b7b)
+
+anchor.group.add(video_asset_8c087b460da)
 
 
     anchor.onTargetFound = () => {
@@ -295,19 +308,20 @@ anchor.group.add(image_36418ace_51651679)
 
 
 
+                  executeAnimation({"name":"fade","state":"in","value":-1.2,"duration":1000,"delay":0,"event":"load"}, video_asset_8c087b460da)
 
      
-      video_asset_8c087bcaaf4_Item0Video.play();
+      video_asset_8c087b460da_Item0Video.play();
     };
 
 
     anchor.onTargetLost = () => {
-       video_asset_8c087bcaaf4_Item0Video.pause();
+       video_asset_8c087b460da_Item0Video.pause();
 
         
 
 
-
+animationManager.resetObject(name)
     }
     
     
